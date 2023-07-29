@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Javascript Bytes]]></title>
+        <description><![CDATA[Bytes: Your weekly dose of JS]]></description>
+        <link>https://bytes.dev</link>
+        <image>
+            <url>https://bytes.dev/favicon/favicon-32x32.png</url>
+            <title>Javascript Bytes</title>
+            <link>https://bytes.dev</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 29 Jul 2023 17:20:25 GMT</lastBuildDate>
+        <author><![CDATA[Bytes.dev]]></author>
+        <ttl>60</ttl>
+        <item>
+            <title><![CDATA[Animorphs and View Transitions]]></title>
+            <link>https://bytes.dev/archives/208</link>
+            <guid isPermaLink="true">https://bytes.dev/archives/208</guid>
+            <dc:creator><![CDATA[Bytes.dev]]></dc:creator>
+            <pubDate>Wed, 26 Jul 2023 18:30:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Barbie Edition]]></title>
+            <link>https://bytes.dev/archives/207</link>
+            <guid isPermaLink="true">https://bytes.dev/archives/207</guid>
+            <dc:creator><![CDATA[Bytes.dev]]></dc:creator>
+            <pubDate>Sun, 23 Jul 2023 18:30:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Material Web Components surprised everyone]]></title>
+            <link>https://bytes.dev/archives/206</link>
+            <guid isPermaLink="true">https://bytes.dev/archives/206</guid>
+            <dc:creator><![CDATA[Bytes.dev]]></dc:creator>
+            <pubDate>Wed, 19 Jul 2023 18:30:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[One style guide to rule them all]]></title>
+            <link>https://bytes.dev/archives/205</link>
+            <guid isPermaLink="true">https://bytes.dev/archives/205</guid>
+            <dc:creator><![CDATA[Bytes.dev]]></dc:creator>
+            <pubDate>Sun, 16 Jul 2023 18:30:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Turso goes all-in on the edge]]></title>
+            <link>https://bytes.dev/archives/204</link>
+            <guid isPermaLink="true">https://bytes.dev/archives/204</guid>
+            <dc:creator><![CDATA[Bytes.dev]]></dc:creator>
+            <pubDate>Wed, 12 Jul 2023 18:30:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hot Spec Summer is back again]]></title>
+            <link>https://bytes.dev/archives/203</link>
+            <guid isPermaLink="true">https://bytes.dev/archives/203</guid>
+            <dc:creator><![CDATA[Bytes.dev]]></dc:creator>
+            <pubDate>Sun, 09 Jul 2023 18:30:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
