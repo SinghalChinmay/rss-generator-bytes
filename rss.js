@@ -34,7 +34,7 @@ function scrape(html) {
     articles.push({
         url: "https://bytes.dev" + sec_1.find("a").attr("href"),
         pubDate: sec_1.find("span").first().text(),
-        title: sec_1.find("p").first().text(),
+        title: `${sec_1.find("span").eq(1).text()}: ${sec_1.find("p").first().text()}`,
     })
 
     const archive = sec_2.find("li").slice(0, 5)
@@ -44,7 +44,7 @@ function scrape(html) {
         articles.push({
             url: link,
             pubDate: $(el).find("span").first().text(),
-            title: $(el).find("div").eq(1).text(),
+            title: `${$(el).find("span").eq(1).text()}: ${$(el).find("div").eq(1).text()}`,
         })
     })
     createFeed(articles)
