@@ -1,7 +1,6 @@
 const axios = require("axios")
 const cheerio = require("cheerio")
 const RSS = require("rss")
-const fs = require("fs")
 
 function createFeed(data) {
     const feed = new RSS({
@@ -20,8 +19,8 @@ function createFeed(data) {
         })
     }
 
-    const xml = feed.xml({ indent: true })
-    fs.writeFileSync("feed.xml", xml)
+    let xml = feed.xml({ indent: true })
+    return xml
 }
 
 function scrape(html) {
@@ -47,14 +46,19 @@ function scrape(html) {
             title: `${$(el).find("span").eq(1).text()}: ${$(el).find("div").eq(1).text()}`,
         })
     })
-    createFeed(articles)
+    return createFeed(articles)
 }
 
-function fetchRss() {
-    axios.get("https://bytes.dev/archives").then((res) => {
+async function fetchRss() {
+    try {
+        const res = await axios.get("https://bytes.dev/archives");
         const data = res.data;
-        scrape(data)
-    })
+        const xmlData = scrape(data);
+        return xmlData;
+    } catch (err) {
+        console.log(err);
+        throw err;
+    }
 }
 
 module.exports = { fetchRss }

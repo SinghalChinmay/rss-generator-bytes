@@ -5,9 +5,10 @@ const { fetchRss } = require("./rss")
 const app = express()
 app.use(cors())
 
-app.get("/", (res, req) => {
-    fetchRss()
-    req.sendFile("feed.xml", { root: __dirname })
+app.get("/", async (req, res) => {
+    let xmlData = await fetchRss()
+    res.set("Content-Type", "application/xml")
+    res.send(xmlData)
 })
 
 app.listen(3000, () => {
